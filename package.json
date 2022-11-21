@@ -1,0 +1,70 @@
+{
+  "name": "vite-admin-template",
+  "version": "1.0.0",
+  "description": "A vite vue admin template with Element UI & axios & iconfont & permission control & lint",
+  "author": "qukun@rsmatrix.cn",
+  "scripts": {
+    "dev": "vite",
+    "build:prod": "vite build",
+    "build:stage": "vite build --mode staging",
+    "preview": "vite preview",
+    "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
+    "lint": "eslint --ext .js,.vue src",
+    "test:unit": "jest --clearCache && jest",
+    "test:ci": "npm run lint && npm run test:unit"
+  },
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "axios": "0.18.1",
+    "core-js": "3.6.5",
+    "echarts": "^5.4.0",
+    "element-ui": "2.15.10",
+    "js-cookie": "2.2.0",
+    "jsts": "^2.9.3",
+    "lodash-es": "^4.17.21",
+    "normalize.css": "7.0.0",
+    "nprogress": "0.2.0",
+    "ol": "^7.1.0",
+    "path-browserify": "^1.0.1",
+    "path-to-regexp": "2.4.0",
+    "proj4": "^2.8.0",
+    "vue": "2.6.10",
+    "vue-router": "3.0.6",
+    "vuex": "3.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.17.10",
+    "@vitejs/plugin-vue-jsx": "^1.3.10",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "@vue/vue2-jest": "^27.0.0",
+    "autoprefixer": "9.5.1",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "^27.5.1",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-dynamic-import-node": "2.3.3",
+    "eslint": "6.7.2",
+    "eslint-plugin-vue": "6.2.2",
+    "jest": "^27.5.1",
+    "jest-serializer-vue": "^2.0.2",
+    "jest-transform-stub": "^2.0.0",
+    "mockjs": "^1.1.0",
+    "sass": "1.26.8",
+    "sass-loader": "8.0.2",
+    "svgo": "1.2.2",
+    "vite": "^2.9.9",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-mock": "^2.9.6",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-vue2": "^2.0.0",
+    "vue-template-compiler": "2.6.10"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "engines": {
+    "node": ">=8.9",
+    "npm": ">= 3.0.0"
+  },
+  "license": "MIT"
+}
